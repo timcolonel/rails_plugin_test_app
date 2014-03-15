@@ -43,3 +43,15 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'mysql2', '0.3.11'
+
+gem 'rails_admin'
+
+gem 'devise'
+
+gem 'bootstrap-sass'
+
+gem 'thin'
+
+gem 'i18n-active_record', :github => 'timcolonel/i18n-active_record', :require => 'i18n/active_record'
