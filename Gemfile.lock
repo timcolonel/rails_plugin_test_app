@@ -9,6 +9,8 @@ PATH
   remote: C:/dev/ws/ruby/i18n_admin_utils
   specs:
     i18n_admin_utils (0.0.1)
+      i18n-active_record
+      json
       rails (~> 4.0.0)
 
 GEM
