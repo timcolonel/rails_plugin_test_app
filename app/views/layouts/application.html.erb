@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>RailsPluginTestApp</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= content_for?(:title) ? yield(:title) : "Stock Manager" %></title>
+  <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Rails Bootstrap" %>">
+  <%= stylesheet_link_tag 'application', :media => 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= javascript_include_tag 'i18n_admin_utils/translation_helper' if Rails.env.development? %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+<header class='navbar navbar-inverse navbar-fixed-top' role='navigation'>
+  <%= render :partial => 'layouts/navigation' %>
+</header>
+<div role="main" class='container theme-showcase'>
+  <div class="content">
+    <div class="row">
+      <div class="span12">
+        <%= render :partial => 'layouts/messages' %>
+        <%= yield %>
+      </div>
+    </div>
+    <footer>
+    </footer>
+  </div>
+</div>
 </body>
 </html>
