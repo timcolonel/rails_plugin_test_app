@@ -7,6 +7,9 @@
   <%= stylesheet_link_tag 'application', :media => 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= javascript_include_tag 'i18n_admin_utils/translation_helper' if Rails.env.development? %>
+
+  <%= javascript_include_tag 'rails_embed_editor/application' if Rails.env.development? %>
+  <%= stylesheet_link_tag 'rails_embed_editor/application' if Rails.env.development? %>
   <%= csrf_meta_tags %>
 </head>
 <body>

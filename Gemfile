@@ -57,3 +57,4 @@ gem 'thin'
 gem 'i18n-active_record', :github => 'timcolonel/i18n-active_record', :require => 'i18n/active_record'
 
 gem 'i18n_admin_utils', :path=> 'C:\dev\ws\ruby\i18n_admin_utils'
+gem 'rails_embed_editor', :path=> 'C:\dev\ws\ruby\rails_embed_editor'
