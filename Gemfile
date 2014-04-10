@@ -44,7 +44,7 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'mysql2', '0.3.11'
+gem 'mysql2', '0.3.15'
 
 gem 'rails_admin'
 
@@ -55,6 +55,8 @@ gem 'bootstrap-sass'
 gem 'thin'
 
 gem 'i18n-active_record', :github => 'timcolonel/i18n-active_record', :require => 'i18n/active_record'
+
+gem 'cancan'
 
 gem 'i18n_admin_utils', :path=> 'C:\dev\ws\ruby\i18n_admin_utils'
 gem 'rails_embed_editor', :path=> 'C:\dev\ws\ruby\rails_embed_editor'

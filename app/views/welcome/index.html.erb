@@ -6,102 +6,12 @@
 <%= t('test4') %>
 <%= t('test5') %>
 <%= t('test6') %>
-
-
+<%= t('test7') %>
 <div>
   Editor:
 </div>
 
-
-<div class="rails_embed_code_editor">
-  sometext
-  sometext
-  sometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometext
-  sometext
-  sometext
-  sometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometext sometext
-  sometext
-  sometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometext sometext
-  sometext
-  sometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometext sometext
-  sometext
-  sometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometext sometext
-  sometext
-  sometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometext sometext
-  sometext
-  sometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometext sometext
-  sometext
-  sometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometextsometext
-  sometext
-</div>
+<%= rails_embed_editor("#{Rails.root}/app/views/welcome/show.html.erb",
+                       :line => 5, :radius => 2,
+                       :highlight => '5',
+                       :editormode => RailsEmbedEditor::EditorMode::READ_WRITE) %>

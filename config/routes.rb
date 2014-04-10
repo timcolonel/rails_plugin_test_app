@@ -1,7 +1,7 @@
 RailsPluginTestApp::Application.routes.draw do
 
 
-  get "welcome/index"
+  get 'welcome/index'
   devise_for :users
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
   mount I18nAdminUtils::Engine => '/'
